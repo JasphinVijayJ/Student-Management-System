@@ -9,11 +9,3 @@ constraint st_phone_uk unique key (Phone),
 constraint st_gender_ck check (Gender in ('Male','Female', 'Other')));
 
 select * from student;
-
-create table management(employee_id int auto_increment primary key, employee_name varchar(50) not null,
-employee_email varchar(50) not null, employee_password varchar(50), createdAt timestamp);
-
-select * from management;
-
-truncate table management;
-drop table management;
